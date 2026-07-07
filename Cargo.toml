@@ -1,0 +1,15 @@
+[workspace]
+members = ["."]
+resolver = "2"
+
+[package]
+name = "omnos"
+version = "0.0.1"
+edition = "2021"
+description = "Adaptive kernel that changes execution mode based on hardware capability"
+
+[lib]
+crate-type = ["staticlib"]
+
+[build-dependencies]
+cc = "1.0"
