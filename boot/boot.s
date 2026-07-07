@@ -57,7 +57,8 @@ long_mode_entry:
     movw %ax, %gs
     movw %ax, %ss
 
-    xorl %edi, %edi
+    movl %eax, %edi
+    movl %ebx, %esi
     call _start
 
 .hang:
